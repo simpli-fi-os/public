@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simpli-FI OS Web Services builds fast, beautiful, AI-optimized websites for small businesses. Custom sites starting at $20. GEO optimized so AI assistants recommend your business.">
+    <title>Simpli-FI OS Web Services — Fast, Beautiful Websites for Small Businesses</title>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Simpli-FI OS Web Services",
+        "description": "Web design agency building fast, AI-optimized websites for small businesses. Custom sites starting at $20 with GEO optimization so AI assistants recommend your business.",
+        "url": "https://simpli-fi-os.com/public/",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Denton",
+            "addressRegion": "TX",
+            "addressCountry": "US"
+        },
+        "priceRange": "$",
+        "knowsAbout": ["Web Design", "GEO Optimization", "Schema Markup", "Small Business Websites"]
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #0c0c14;
+            --color-surface: #14141f;
+            --color-border: #1e1e30;
+            --color-text: #e0ddd8;
+            --color-text-dim: #8a8680;
+            --color-accent: #4af0c0;
+            --color-accent-dim: rgba(74, 240, 192, 0.1);
+            --color-warm: #f0c040;
+            --font-heading: 'DM Serif Display', Georgia, serif;
+            --font-body: 'DM Sans', system-ui, sans-serif;
+        }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-body); background: var(--color-bg); color: var(--color-text); line-height: 1.7; }
+        a { color: var(--color-accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .container { width: 90%; max-width: 1100px; margin: 0 auto; }
+
+        /* HERO */
+        .hero { padding: 6rem 0 4rem; text-align: center; }
+        .hero .badge { display: inline-block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 3px; color: var(--color-accent); border: 1px solid var(--color-accent); padding: 0.35rem 1rem; border-radius: 2px; margin-bottom: 1.5rem; }
+        .hero h1 { font-family: var(--font-heading); font-size: 2.8rem; line-height: 1.2; margin-bottom: 1.2rem; color: #fff; }
+        .hero h1 em { font-style: normal; color: var(--color-accent); }
+        .hero p { font-size: 1.15rem; color: var(--color-text-dim); max-width: 620px; margin: 0 auto 2.5rem; }
+        .hero-stats { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; margin-top: 2rem; }
+        .stat { text-align: center; }
+        .stat strong { display: block; font-family: var(--font-heading); font-size: 1.8rem; color: var(--color-accent); }
+        .stat span { font-size: 0.8rem; color: var(--color-text-dim); text-transform: uppercase; letter-spacing: 1px; }
+
+        /* SECTION */
+        section { padding: 4rem 0; }
+        section h2 { font-family: var(--font-heading); font-size: 1.8rem; color: #fff; margin-bottom: 0.5rem; }
+        section .subtitle { color: var(--color-text-dim); margin-bottom: 2rem; }
+
+        /* PORTFOLIO GRID */
+        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; }
+        .site-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px; padding: 1.5rem; transition: border-color 0.3s, transform 0.2s; }
+        .site-card:hover { border-color: var(--color-accent); transform: translateY(-3px); }
+        .site-card .card-header { display: flex; justify-content: space-between; align-items: start; margin-bottom: 0.75rem; }
+        .site-card h3 { font-family: var(--font-heading); font-size: 1.2rem; color: #fff; }
+        .site-card .location { font-size: 0.8rem; color: var(--color-text-dim); }
+        .site-card .category { display: inline-block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-accent); background: var(--color-accent-dim); padding: 0.2rem 0.6rem; border-radius: 3px; }
+        .site-card p { font-size: 0.9rem; color: var(--color-text-dim); margin: 0.75rem 0; line-height: 1.5; }
+        .site-card .card-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--color-border); }
+        .site-card .rating { color: var(--color-warm); font-size: 0.9rem; font-weight: 600; }
+        .view-btn { font-size: 0.85rem; font-weight: 600; color: var(--color-accent); letter-spacing: 0.5px; }
+
+        /* WHAT'S DIFFERENT */
+        .diff-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .diff-card { padding: 1.5rem; border-left: 3px solid var(--color-accent); background: var(--color-surface); border-radius: 0 6px 6px 0; }
+        .diff-card h3 { font-family: var(--font-heading); color: #fff; margin-bottom: 0.5rem; font-size: 1.05rem; }
+        .diff-card p { font-size: 0.9rem; color: var(--color-text-dim); }
+
+        /* PRICING */
+        .pricing-row { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1.5rem; }
+        .price-card { flex: 1; min-width: 250px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px; padding: 2rem; text-align: center; }
+        .price-card.featured { border-color: var(--color-accent); }
+        .price-card .price { font-family: var(--font-heading); font-size: 2.4rem; color: #fff; }
+        .price-card .price span { font-size: 1rem; color: var(--color-text-dim); }
+        .price-card .label { font-size: 0.85rem; color: var(--color-text-dim); margin-bottom: 1rem; }
+        .price-card ul { list-style: none; text-align: left; margin-top: 1rem; }
+        .price-card li { font-size: 0.9rem; padding: 0.4rem 0; color: var(--color-text-dim); }
+        .price-card li::before { content: "✓ "; color: var(--color-accent); font-weight: 700; }
+
+        /* CTA */
+        .cta { text-align: center; padding: 4rem 0; }
+        .cta h2 { margin-bottom: 1rem; }
+        .cta p { color: var(--color-text-dim); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .cta-btn { display: inline-block; background: var(--color-accent); color: var(--color-bg); padding: 0.9rem 2.5rem; border-radius: 4px; font-weight: 700; font-size: 1rem; transition: transform 0.2s; }
+        .cta-btn:hover { transform: translateY(-2px); text-decoration: none; }
+
+        /* FOOTER */
+        footer { text-align: center; padding: 2rem 0; font-size: 0.8rem; color: var(--color-text-dim); border-top: 1px solid var(--color-border); }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero-stats { gap: 1.5rem; }
+            .portfolio-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <div class="badge">Denton, TX</div>
+            <h1>Beautiful websites.<br><em>Built for AI.</em></h1>
+            <p>We find great businesses with weak websites, build them something better, and make sure AI assistants like ChatGPT and Siri can recommend them. Starting at $20.</p>
+            <div class="hero-stats">
+                <div class="stat"><strong>10</strong><span>Sites Built</span></div>
+                <div class="stat"><strong>$20</strong><span>Per Build</span></div>
+                <div class="stat"><strong>95+</strong><span>Lighthouse Score</span></div>
+                <div class="stat"><strong>GEO</strong><span>AI Optimized</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Portfolio</h2>
+            <p class="subtitle">Real sites built for real businesses. Click to view live.</p>
+            <div class="portfolio-grid">
+                <a href="https://simpli-fi-os.com/smoketerranean/" class="site-card" style="text-decoration:none;color:inherit;">
+                    <div class="card-header"><h3>Smoketerranean</h3><span class="category">BBQ / Mediterranean</span></div>
+                    <p class="location">Denton, TX</p>
+                    <p>Texas BBQ meets Mediterranean. Smoked brisket shawarma, lamb kabobs, and the famous Meditex Plate. Food trailer on E McKinney.</p>
+                    <div class="card-footer"><span class="rating">4.8 stars (70 reviews)</span><span class="view-btn">View Site &rarr;</span></div>
+                </a>
+                <a href="https://simpli-fi-os.com/barnharts-barbershop/" class="site-card" style="text-decoration:none;color:inherit;">
+                    <div class="card-header"><h3>Barnhart's Barbershop</h3><span class="category">Barbershop</span></div>
+                    <p class="location">Denton, TX</p>
+                    <p>Classic cuts on the Denton square. Late-night hours, walk-ins welcome. Best of Denton 5 years running. Owned by Gary Barnhart.</p>
+                    <div class="card-footer"><span class="rating">4.6 stars (136 reviews)</span><span class="view-btn">View Site &rarr;</span></div>
+                </a>
+                <a href="https://simpli-fi-os.com/taqueria-guanajuato/" class="site-card" style="text-decoration:none;color:inherit;">
+                    <div class="card-header"><h3>Taqueria Guanajuato</h3><span class="category">Mexican Restaurant</span></div>
+                    <p class="location">Denton, TX</p>
+                    <p>Authentic Mexican street food. Birria tacos, chilaquiles, pozole, and fresh handmade salsas. Family-owned, open daily from 7 AM.</p>
+                    <div class="card-footer"><span class="rating">4.6 stars (540 reviews)</span><span class="view-btn">View Site &rarr;</span></div>
+                </a>
+                <a href="https://simpli-fi-os.com/rays-candy-store/" class="site-card" style="text-decoration:none;color:inherit;">
+                    <div class="card-header"><h3>Ray's Candy Store</h3><span class="category">Desserts / Landmark</span></div>
+                    <p class="location">East Village, NYC</p>
+                    <p>Open 24/7 since 1974. Legendary beignets, fried Oreos, egg creams, and soft serve on Avenue A. A true NYC institution.</p>
+                    <div class="card-footer"><span class="rating">NYC Legend</span><span class="view-btn">View Site &rarr;</span></div>
+                </a>
+                <a href="https://simpli-fi-os.com/la-bonbonniere/" class="site-card" style="text-decoration:none;color:inherit;">
+                    <div class="card-header"><h3>La Bonbonniere</h3><span class="category">Diner</span></div>
+                    <p class="location">West Village, NYC</p>
+                    <p>Classic New York diner. Cash-only breakfast and lunch spot that's been a Village staple for decades.</p>
+                    <div class="card-footer"><span class="rating">Village Classic</span><span class="view-btn">View Site &rarr;</span></div>
+                </a>
+                <a href="https://simpli-fi-os.com/middle-village-bagels/" class="site-card" style="text-decoration:none;color:inherit;">
+                    <div class="card-header"><h3>Middle Village Bagels</h3><span class="category">Bagel Shop</span></div>
+                    <p class="location">Queens, NYC</p>
+                    <p>Fresh bagels and deli in Middle Village, Queens. Neighborhood favorite for breakfast sandwiches and classic New York bagels.</p>
+                    <div class="card-footer"><span class="rating">Queens Favorite</span><span class="view-btn">View Site &rarr;</span></div>
+                </a>
+                <a href="https://simpli-fi-os.com/blue-sky-deli/" class="site-card" style="text-decoration:none;color:inherit;">
+                    <div class="card-header"><h3>Blue Sky Deli</h3><span class="category">Deli</span></div>
+                    <p class="location">NYC</p>
+                    <p>Neighborhood deli serving fresh sandwiches, salads, and grocery essentials.</p>
+                    <div class="card-footer"><span class="rating">&mdash;</span><span class="view-btn">View Site &rarr;</span></div>
+                </a>
+                <a href="https://simpli-fi-os.com/faded-blue/" class="site-card" style="text-decoration:none;color:inherit;">
+                    <div class="card-header"><h3>Faded Blue</h3><span class="category">Lifestyle</span></div>
+                    <p class="location">Denton, TX</p>
+                    <p>Local Denton business with a distinctive brand identity and loyal following.</p>
+                    <div class="card-footer"><span class="rating">&mdash;</span><span class="view-btn">View Site &rarr;</span></div>
+                </a>
+                <a href="https://simpli-fi-os.com/inkstop-tattoo/" class="site-card" style="text-decoration:none;color:inherit;">
+                    <div class="card-header"><h3>Inkstop Tattoo</h3><span class="category">Tattoo Shop</span></div>
+                    <p class="location">NYC</p>
+                    <p>Professional tattoo studio. Custom work, walk-ins welcome, experienced artists.</p>
+                    <div class="card-footer"><span class="rating">&mdash;</span><span class="view-btn">View Site &rarr;</span></div>
+                </a>
+                <a href="https://simpli-fi-os.com/downtown-mini-mall-ii/" class="site-card" style="text-decoration:none;color:inherit;">
+                    <div class="card-header"><h3>Downtown Mini Mall II</h3><span class="category">Retail</span></div>
+                    <p class="location">NYC</p>
+                    <p>Multi-vendor retail space in downtown Manhattan. Unique finds and local vendors.</p>
+                    <div class="card-footer"><span class="rating">&mdash;</span><span class="view-btn">View Site &rarr;</span></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>What Makes Our Sites Different</h2>
+            <p class="subtitle">Every site is built for two audiences: humans and AI assistants.</p>
+            <div class="diff-grid">
+                <div class="diff-card">
+                    <h3>GEO Optimized</h3>
+                    <p>Generative Engine Optimization means AI assistants like ChatGPT, Siri, and Gemini can read, understand, and recommend your business. Most agencies don't know this exists yet.</p>
+                </div>
+                <div class="diff-card">
+                    <h3>Schema Markup</h3>
+                    <p>Complete JSON-LD structured data tells search engines and AI exactly what your business offers, where you are, when you're open, and what customers think.</p>
+                </div>
+                <div class="diff-card">
+                    <h3>Lightning Fast</h3>
+                    <p>Every site scores 90+ on Google Lighthouse, loads in under 2 seconds, and weighs less than 500KB. No bloated templates or slow plugins.</p>
+                </div>
+                <div class="diff-card">
+                    <h3>Designed, Not Templated</h3>
+                    <p>Each site is custom-designed to match the personality of the business. No cookie-cutter layouts. No generic AI slop. Real design for real businesses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Simple Pricing</h2>
+            <p class="subtitle">Professional websites at a price any business can afford.</p>
+            <div class="pricing-row">
+                <div class="price-card featured">
+                    <div class="price">$20</div>
+                    <div class="label">One-time build</div>
+                    <ul>
+                        <li>Custom-designed website</li>
+                        <li>Mobile responsive</li>
+                        <li>GEO + SEO optimized</li>
+                        <li>Schema markup included</li>
+                        <li>FAQ section with AI-friendly content</li>
+                        <li>Lighthouse 90+ scores</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <div class="price">$3.99<span>/mo</span></div>
+                    <div class="label">Hosting + maintenance</div>
+                    <ul>
+                        <li>Site stays live and secure</li>
+                        <li>Content updates included</li>
+                        <li>Monthly uptime checks</li>
+                        <li>Ongoing GEO optimization</li>
+                        <li>Cancel anytime</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>We may have already built your site.</h2>
+            <p>If you're a business with great reviews and no website, there's a chance we've already made you something. Take a look.</p>
+            <a href="mailto:hunter.lott@simpli-fi-os.com" class="cta-btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Simpli-FI OS Web Services &mdash; Denton, Texas</p>
+            <p>Built by Remington Lott. Powered by Simpli-FI OS.</p>
+        </div>
+    </footer>
+</body>
+</html>
